@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Task Manager</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h1>🌟 Task Manager</h1>
+<form id="task-form">
+<input type="text" id="task-input" placeholder="Task name" required />
+  <select id="category">
+ <option value="work">Work</option>
+ <option value="personal">Personal</option>
+  <option value="urgent">Urgent</option>
+     </select>
+  <input type="date" id="due-date" />
+   <button type="submit">Add Task</button>
+   </form>
+
+   <div class="columns">
+  <div class="column" id="work">
+  <h2>💼 Work</h2>
+   <ul class="task-list" data-category="work"></ul>
+  </div>
+  <div class="column" id="personal">
+  <h2>🏡 Personal</h2>
+   <ul class="task-list" data-category="personal"></ul>
+    </div>
+   <div class="column" id="urgent">
+   <h2>🚨 Urgent</h2>
+   <ul class="task-list" data-category="urgent"></ul>
+  </div>
+   </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
+
